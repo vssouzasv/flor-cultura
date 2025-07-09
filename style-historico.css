@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #6a994e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+thead {
+  background-color: #eeeeee;
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+.entregue {
+  color: green;
+  font-weight: bold;
+}
+
+.enviado {
+  color: #f2a600;
+  font-weight: bold;
+}
+
+.cancelado {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+}

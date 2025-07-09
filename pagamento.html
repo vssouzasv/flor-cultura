@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagamento - Flor&Cultura</title>
+  <link rel="stylesheet" href="style-pagamento.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="imagem-destaque">
+    <img src="imagens/imagem-inicio.jpg" alt="Imagem de flores" />
+  </section>
+
+  <div class="container">
+    <h1>Finalizar Pagamento</h1>
+    <form id="form-pagamento">
+      <label>Nome completo:</label>
+      <input type="text" required>
+
+      <label>Email para confirmação:</label>
+      <input type="email" required>
+
+      <label>Número do cartão:</label>
+      <input type="text" maxlength="19" placeholder="0000 0000 0000 0000" required>
+
+      <label>Validade:</label>
+      <input type="month" required>
+
+      <label>Código de segurança (CVV):</label>
+      <input type="text" maxlength="4" required>
+
+      <button type="submit">Pagar Agora</button>
+    </form>
+
+    <div id="mensagem-confirmacao" class="oculto">
+      <h2>Pagamento aprovado!</h2>
+      <p>Um e-mail de confirmação foi enviado para <span id="email-cliente"></span>.</p>
+      <p>Deseja visualizar o <a href="historico.html">histórico</a> de pedidos?</p>
+    </div>
+  </div>
+
+  <script src="pagamento.js"></script>
+
+</body>
+</html>

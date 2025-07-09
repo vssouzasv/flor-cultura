@@ -1,0 +1,57 @@
+ #hero { 
+            background: url(imagens/buque-header.avif) repeat;
+            height: 300px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center; 
+            color: white;
+        }
+        
+        #main-container { 
+            max-width: 800px; 
+            margin: 20px auto; 
+            padding: 0 20px; 
+        }
+        
+        #cta-button {
+            display: inline-block; 
+            background: #EFACA5; 
+            color: white; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            margin: 10px 0; 
+        }
+        
+        #buques-grid { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            margin: 20px 0; 
+        }
+        
+       #buque-card {
+  background: white;
+  width: 48%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+#buque-card:hover {
+  transform: translateY(-4px);
+}
+
+#buque-card img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+       

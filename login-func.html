@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Funcionário - Flor&Cultura</title>
+  <link rel="stylesheet" href="painel.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="imagem-destaque">
+    <img src="imagens/imagem-inicio.jpg" alt="Imagem de flores" />
+  </section>
+
+  <header>
+    <h2>Painel de funcionários</h2>
+  </header>
+  
+  <div class="login-container">
+    <h1>Login</h1>
+    <form id="form-login">
+      <label>Usuário:</label>
+      <input type="text" id="usuario" required>
+
+      <label>Senha:</label>
+      <input type="password" id="senha" required>
+
+      <label>Cargo:</label>
+      <select id="cargo" required>
+        <option value="">Selecione</option>
+        <option value="funcionario">Funcionário</option>
+        <option value="gerente">Gerente</option>
+      </select>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <div id="painel" class="oculto"></div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
